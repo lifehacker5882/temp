@@ -1,5 +1,5 @@
 #frontpage{
-    background-color: teal;
+    background-color: #1D4915;
     margin: 0;
     padding: 0;
     background-image: url(background.jpg);
@@ -10,10 +10,6 @@
     -webkit-background-size:cover;
 }
 
-#header{
-    width: 100%;
-}
-
 #logo{
     width: 10px;
     height: 10px;
@@ -22,14 +18,15 @@
 img{
     width: 5em;
     height: 4em;
-    padding: 2em 2em 2em 2em;
+    padding: 10px;
     justify-content: flex-start;
 }
 
-#logonavn{
+#sitename{
     font-size: 20px;
-    padding-top: 1em;
+    padding: 5px;
     color: #1D4915;
+    font-family: 'Roboto';
 }
 
 footer{
@@ -64,10 +61,11 @@ nav {
 
 .nav-ul li a {
     display: inline-block;
-    color: teal;
+    color:#1D4915;
     font-family: 'Roboto';
     padding: 10px 20px;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .nav-footer {
@@ -80,17 +78,18 @@ nav {
 
 .nav-footer li a {
     display: inline-block;
-    color: teal;
+    color: #1D4915;
     font-family: 'Roboto';
     padding: 10px 20px;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .hamburger {
     background-color: transparent;
     border: 0;
     display: none;
-    color: teal;
+    color: #1D4915;
     cursor: pointer;
     font-size: 2.5em;
     display: block;
@@ -127,8 +126,19 @@ nav {
     border-color: white;
     font-size: 2.5em;
     color: white;
-    background-color: #1D4915;
-    
+    background-color: #1D4915;   
+}
+
+h1 {
+    text-shadow: black 0px 0px 2px;
+}
+
+h2 {
+    text-shadow: black 0px 0px 2px
+}
+
+p {
+    text-shadow: black 0px 0px 2px
 }
 
 
@@ -138,12 +148,30 @@ nav {
       }
     }
 
+    
+
 @media  (min-width: 576px) {
  
   
     .desktop-menu {
       display: none;
     }
+
+    h1 {
+        font-size: 4em;
+        text-shadow: black 2px 0px 2px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        text-shadow: black 2px 0px 2px
+    }
+
+    p {
+        font-size: 1.5em;
+        text-shadow: black 2px 0px 2px
+    }
+
   }
   
   @media  (min-width: 640px) {
@@ -151,6 +179,23 @@ nav {
   }
   
   @media  (min-width: 768px) {
+
+    img{
+    width: 8em;
+    height: 5em;
+    padding: 2em 2em 2em 2em;
+    justify-content: flex-start;
+    }
+
+    
+    #sitename{
+        font-size: 2.5em;
+        padding: 5px;
+        color: #1D4915;
+        font-family: 'Roboto';
+    }
+
+    
  
   }
   
@@ -172,8 +217,19 @@ nav {
         padding: 0;
         list-style-type: none;
         flex-direction: row;
-        font-size: 2em;
+        font-size: 1.5em;
     }
+
+    nav {
+        background-color: white;
+        display:flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    
 
 }
     
